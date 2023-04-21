@@ -67,7 +67,7 @@ class _LocationScreenState extends State<LocationScreen> {
                   ),
                 )),
           ],
-          title: Text('Maps Sample App'),
+          title: Text('Maps App'),
           backgroundColor: Colors.green.shade700,
         ),
         body: Stack(
@@ -87,46 +87,10 @@ class _LocationScreenState extends State<LocationScreen> {
                       : MapType.normal,
                   initialCameraPosition: locationController.cameraps.value),
             ),
-            // Container(
-            //   margin: EdgeInsets.all(10),
-            //   padding: EdgeInsets.all(4),
-            //   height: 45,
-            //   width: double.infinity,
-            //   decoration: BoxDecoration(
-            //     color: Colors.white,
-            //     borderRadius: BorderRadiusDirectional.circular(30),
-            //   ),
-            //   child: Row(
-            //     crossAxisAlignment: CrossAxisAlignment.center,
-            //     children: [
-            //       CircleAvatar(
-            //         backgroundImage: AssetImage("assets/images/p1.jpeg"),
-            //       ),
-            //       SizedBox(
-            //         width: 5,
-            //       ),
-            //       Icon(Icons.search, color: Colors.grey, size: 20),
-            //       SizedBox(
-            //         width: 5,
-            //       ),
-            //       Text(
-            //         "Search here",
-            //         style: TextStyle(
-            //             color: Colors.grey, letterSpacing: 1, fontSize: 14),
-            //       ),
-            //       Spacer(),
-            //       Icon(Icons.mic, color: Colors.grey),
-            //       SizedBox(
-            //         width: 15,
-            //       ),
-            //     ],
-            //   ),
-            // ),
             Align(
               alignment: Alignment.centerRight,
               child: Container(
                 height: 500,
-                // color: Colors.grey,
                 width: 70,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
